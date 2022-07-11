@@ -55,7 +55,7 @@ namespace Challenge
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 // pick comments from classes, including controller summary comments
-                options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
+                //options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
                 // _OR_ enable the annotations on Controller classes [SwaggerTag], if no class comments present
                 options.EnableAnnotations();
 
